@@ -1,8 +1,8 @@
-
+/* 
 .navbar {
-    display: flex;
-    background-color: #ededed;
+    display: block;
     height: 94px;
+    width: 100%;
 }
 
 .logo_container {
@@ -19,4 +19,4 @@
     gap: 10px;
     height: 100%;
     list-style: none;
-}
+} */
