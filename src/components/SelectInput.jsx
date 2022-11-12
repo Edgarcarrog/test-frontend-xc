@@ -2,8 +2,9 @@ import React from "react";
 
 const SelectInput = ({ options }) => {
   return (
-    <select className="bg-transparent"
-    /* className="form-select"
+    <select
+      className="bg-transparent"
+      /* className="form-select"
               id="grade"
               required
               name="grade"
@@ -13,7 +14,7 @@ const SelectInput = ({ options }) => {
     >
       {options.map((option, index) => {
         return (
-          <option value={option} key={index}>
+          <option className="hover:bg-sky-700" value={option} key={index}>
             {option.toUpperCase()}
           </option>
         );

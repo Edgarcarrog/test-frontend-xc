@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
-import SelectInput from "./SelectInput";
+import SelectInput from "../SelectInput";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
