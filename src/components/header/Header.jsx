@@ -1,19 +1,19 @@
-import Image from "next/image";
-import Navbar from "../navbar/Navbar";
 import styles from "./Header.module.css";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const info = useSelector((state) => state.info.info);
+  console.log(info);
   return (
     <header className={styles.header}>
-      <div className={styles.logo_container}>
-        <Image
-          src="https://www.hotelxcaret.com/assets/logos/concentrador-hoteles/hoteles-logos.svg"
-          alt="logo"
-          width={221}
-          height={28}
-        />
-      </div>
-      <Navbar />
+      {info ? (
+        <>
+          <h1>{info.es.header.h1}</h1>{" "}
+          {info.es.header.paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </>
+      ) : null}
     </header>
   );
 };

@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+  language: "es",
   info: null,
 };
 
@@ -11,9 +12,12 @@ export const infoSlice = createSlice({
     setInfo: (state, action) => {
       state.info = action.payload;
     },
+    setLanguage: (state, action) => {
+      state.language = action.payload;
+    },
   },
 });
 
-export const { setInfo } = infoSlice.actions;
+export const { setInfo, setLanguage } = infoSlice.actions;
 
 export default infoSlice.reducer;
