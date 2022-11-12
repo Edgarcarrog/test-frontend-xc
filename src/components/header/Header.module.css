@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    background-color: #ededed;
+    height: 94px;
+}
+
+.logo_container {
+    height: 28px;
+    margin-top: 32px;
+    margin-left: 26px;
+}

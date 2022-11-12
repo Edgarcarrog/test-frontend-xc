@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
+  /* experimental: {
     appDir: true,
+  }, */
+  images: {
+    domains: ["www.hotelxcaret.com", "via.placeholder.com"],
   },
   reactStrictMode: true,
 };

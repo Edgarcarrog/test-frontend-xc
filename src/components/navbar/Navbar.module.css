@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    background-color: #ededed;
+    height: 94px;
+}
+
+.navbar__menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    list-style: none;
+}
