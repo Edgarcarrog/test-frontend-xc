@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
-import SelectInput from "../SelectInput";
+import SelectInput from "../selectInput/SelectInput";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const languages = ["es", "en"];
   return (
-    <nav className={`${styles.navbar} bg-mediumGray h-[94px]`}>
+    <nav className={`${styles.navbar} bg-gray1 h-[94px]`}>
       <div className="h-full flex justify-between">
         <div className={`${styles.logo_container} ml-[27px] h-fit self-center`}>
           <Image
@@ -20,7 +20,7 @@ const Navbar = () => {
           />
         </div>
         <ul
-          className={`${styles.navbar__menu} w-[154px] mr-[39px] h-fit flex justify-between self-center text-base`}
+          className={`${styles.navbar__menu} w-[154px] mr-[39px] h-fit flex justify-between self-center text-base text-black`}
         >
           <li>
             <a href="https://google.com">CONTACTO</a>

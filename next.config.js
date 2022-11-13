@@ -4,7 +4,11 @@ const nextConfig = {
     appDir: true,
   }, */
   images: {
-    domains: ["www.hotelxcaret.com", "via.placeholder.com"],
+    domains: [
+      "www.hotelxcaret.com",
+      "via.placeholder.com",
+      "mdbcdn.b-cdn.net",
+    ],
   },
   reactStrictMode: true,
 };
