@@ -1,14 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* experimental: {
-    appDir: true,
-  }, */
   images: {
-    domains: [
-      "www.hotelxcaret.com",
-      "via.placeholder.com",
-      "mdbcdn.b-cdn.net",
-    ],
+    domains: ["www.hotelxcaret.com", "via.placeholder.com", "mdbcdn.b-cdn.net"],
+    /* path: `${basePath}/_next/image`, */
   },
   reactStrictMode: true,
 };

@@ -1,13 +1,14 @@
 import React from "react";
 import Carousel from "../carousel/Carousel";
-import { useSelector } from "react-redux";
 import Image from "next/image";
 import Button from "../button/Button";
 import Legals from "../legals/Legals";
+import { useSelector } from "react-redux";
 
 const Main = () => {
   const info = useSelector((state) => state.info.info);
-  if (info) console.log(info.es.legals);
+  //if (info) console.log(info.es.legals);
+  
   return (
     <main className="mt-[147px]">
       {info && (
@@ -23,14 +24,14 @@ const Main = () => {
                 width={65}
                 height={96}
               />
-              <h2 className="mt-[32px] text-xl text-gray9">
+              <h2 className="mt-[32px] text-xl text-gray9 h-[43px]">
                 {info.es.promotions[0].title}
               </h2>
-              <p className="mt-[19px] text-lg text-gray7">
+              <p className="mt-[19px] text-lg text-gray7 leading-9">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 atque obcaecati natus odit fuga.
               </p>
-              <p className="mt-[19px] text-md text-gray7">
+              <p className="mt-[19px] text-md text-gray7 leading-9">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 atque obcaecati natus odit fuga.
               </p>

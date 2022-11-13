@@ -1,4 +1,3 @@
-import styles from "./Header.module.css";
 import { useSelector } from "react-redux";
 
 const Header = () => {
@@ -6,8 +5,8 @@ const Header = () => {
 
   return (
     <>
-      <header className={`${styles.header} bg-gray3 box-border`}>
-        {info ? (
+      <header className="bg-gray3 box-border">
+        {info && (
           <>
             <div className="grid grid-cols-12 gap-4">
               <h1 className="col-start-4 col-span-7 mt-[148px] text-xxl text-black">
@@ -22,7 +21,9 @@ const Header = () => {
                 <div className="col-span-5">
                   {info.es.header.paragraphs.map((paragraph, index) => (
                     <div className="inline" key={index}>
-                      <p className="text-xl text-gray7 inline">{paragraph}</p>
+                      <p className="text-xl text-gray7 inline leading-9">
+                        {paragraph}
+                      </p>
                       <span> </span>
                     </div>
                   ))}
@@ -30,7 +31,7 @@ const Header = () => {
               </div>
             </div>
           </>
-        ) : null}
+        )}
       </header>
     </>
   );

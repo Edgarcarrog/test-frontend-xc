@@ -1,38 +1,34 @@
 import React from "react";
 import Image from "next/image";
-import SelectInput from "../selectInput/SelectInput";
+import SelectInput from "../../selectInput/SelectInput";
 import { useSelector } from "react-redux";
 
-const Navbar = () => {
+const NavbarMobile = () => {
   const info = useSelector((state) => state.info.info);
-
+  if (info) console.log(info.es.navbar.menu);
   const languages = ["es", "en"];
   return (
-    <nav className="bg-gray1 h-[94px]">
+    <nav className="bg-white h-[48px]">
       {info && (
         <div className="h-full flex justify-between">
-          <div className="ml-[27px] h-fit self-center">
+          <div className="ml-[8px] h-fit self-center">
             <Image
               src={info.es.navbar.logo}
               alt="logo"
-              width={221}
-              height={28}
+              width={87}
+              height={20}
             />
           </div>
-          <ul className="w-[154px] mr-[39px] h-fit flex justify-between self-center text-base text-black uppercase">
+          <ul className="w-[120px] mt-[5px] mr-[13px] h-fit flex justify-between self-center text-xs text-black uppercase">
             <li>
-              <a href="#">{info.es.navbar.menu.contact}</a>
-            </li>
-            <li>
-              <p>・</p>
+              <a className="" href="#">
+                {info.es.navbar.menu.contact}
+              </a>
             </li>
             <li>
               <a className="" href={info.es.navbar.menu.lang.href}>
                 {info.es.navbar.menu.lang.title}
               </a>
-            </li>
-            <li>
-              <p>・</p>
             </li>
             <li>
               <SelectInput options={info.es.navbar.menu.currency} />
@@ -44,4 +40,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarMobile;

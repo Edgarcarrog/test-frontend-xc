@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
+import Prefooter from "../prefooter/Prefooter";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
-  return (
-    <div>Footer</div>
-  )
-}
+  const info = useSelector((state) => state.info.info);
 
-export default Footer
+  return <footer>{info && <Prefooter data={info.es.prefooter} />}</footer>;
+};
+
+export default Footer;

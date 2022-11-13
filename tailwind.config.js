@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx}",
@@ -25,14 +26,20 @@ module.exports = {
       black: "#000000",
     },
     fontSize: {
+      xs: "9px",
       sm: "11px",
       base: "14px",
       md: "21px",
       lg: "24px",
       xl: "32px",
-      xxl: "48px",
+      xxl: "36px",
+      xxxl: "48px",
     },
-    extend: {},
+    extend: {
+      lineHeight: {
+        "leading-3": "0.875rem",
+      },
+    },
   },
   plugins: [require("tw-elements/dist/plugin")],
 };
