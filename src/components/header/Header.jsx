@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 const Header = () => {
   const info = useSelector((state) => state.info.info);
-  
+
   return (
     <>
       <header className={`${styles.header} bg-gray3 box-border`}>
@@ -21,7 +21,7 @@ const Header = () => {
                 </span>
                 <div className="col-span-5">
                   {info.es.header.paragraphs.map((paragraph, index) => (
-                    <div key={index}>
+                    <div className="inline" key={index}>
                       <p className="text-xl text-gray7 inline">{paragraph}</p>
                       <span> </span>
                     </div>
