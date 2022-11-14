@@ -11,6 +11,7 @@ import NavbarMobile from "../components/mobile/navbar/NavbarMobile";
 import HeaderMobile from "../components/mobile/header/HeaderMobile";
 import MainMobile from "../components/mobile/main/MainMobile";
 import { isMobile, BrowserView, MobileView } from "react-device-detect";
+import FooterMobile from "../components/mobile/footer/FooterMobile";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -41,7 +42,7 @@ export default function Home() {
           <NavbarMobile />
           <HeaderMobile />
           <MainMobile />
-          <Footer />
+          <FooterMobile />
         </body>
       </>
     );

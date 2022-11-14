@@ -10,7 +10,7 @@ const Header = () => {
         {info && (
           <>
             <div className="grid grid-cols-12 gap-4">
-              <h1 className="col-start-4 col-span-7 mt-[148px] text-xxxl text-black">
+              <h1 className="col-start-4 col-span-7 mt-[148px] text-xxxl text-black uppercase">
                 {info[lang].header.h1}
               </h1>
             </div>

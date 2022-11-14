@@ -49,7 +49,7 @@ const Carousel = ({ imagesArray }) => {
         data-bs-slide="prev"
       >
         <span
-          className="bg-gray11 carousel-control-prev-icon inline-block bg-no-repeat"
+          className="carousel-control-prev-icon inline-block bg-no-repeat"
           aria-hidden="true"
         ></span>
         <span className="text-gray11 visually-hidden">Previous</span>
@@ -61,7 +61,7 @@ const Carousel = ({ imagesArray }) => {
         data-bs-slide="next"
       >
         <span
-          className="bg-gray11 carousel-control-next-icon inline-block bg-no-repeat"
+          className="carousel-control-next-icon inline-block bg-no-repeat"
           aria-hidden="true"
         ></span>
         <span className="visually-hidden">Next</span>

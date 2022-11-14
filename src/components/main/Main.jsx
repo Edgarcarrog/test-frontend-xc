@@ -8,7 +8,7 @@ import { useSelector } from "react-redux";
 const Main = () => {
   const info = useSelector((state) => state.info.info);
   const lang = useSelector((state) => state.info.language);
-  
+
   return (
     <main className="mt-[147px]">
       {info && (
@@ -17,7 +17,7 @@ const Main = () => {
             <div className="col-start-2 col-span-6">
               <Carousel imagesArray={info[lang].carousel.desktop} />
             </div>
-            <div className="col-span-4 mt-[51px]">
+            <div className="relative col-span-4 mt-[51px]">
               <Image
                 src={info[lang].promotions[0].logoPromo}
                 alt="promo"
@@ -35,14 +35,14 @@ const Main = () => {
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
                 atque obcaecati natus odit fuga.
               </p>
-              <div className="w-max mt-[19px] mx-auto">
+              <div className="w-[261px] h-[53px] mt-[50px] mx-auto">
                 <Button text={info[lang].promotions[0].button.text} />
               </div>
             </div>
           </section>
 
           <section className="bg-gray2">
-            <div className="grid grid-cols-12 gap-4 max-w-[1800px] mx-auto">
+            <div className="grid grid-cols-12 gap-4 max-w-[1800px] mx-auto pt-[37px] pb-[19px] leading-5">
               <Legals data={info[lang].legals} />
             </div>
           </section>

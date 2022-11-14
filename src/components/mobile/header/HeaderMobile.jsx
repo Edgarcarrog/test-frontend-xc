@@ -10,7 +10,7 @@ const HeaderMobile = () => {
         {info && (
           <>
             <div className="grid">
-              <h1 className="mt-[73px] text-xxl text-black text-center">
+              <h1 className="mt-[73px] text-xxl text-black text-center uppercase">
                 {info[lang].header.h1}
               </h1>
             </div>
