@@ -9,6 +9,12 @@ module.exports = {
     "./node_modules/tw-elements/dist/js/**/*.js",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Arial", "Helvetica", "sans-serif"],
+      serif: ["ui-serif", "Georgia"],
+      display: ["Oswald"],
+      body: ['"Open Sans"'],
+    },
     colors: {
       transparent: "transparent",
       white: "#ffffff",

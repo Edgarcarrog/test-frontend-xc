@@ -11,9 +11,9 @@ const Navbar = () => {
   if (lang && info) console.log(info[lang].navbar.menu.contact);
 
   return (
-    <nav className="bg-gray1 h-[94px]">
+    <nav className="bg-gray1 h-[94px] font-sans">
       {info && (
-        <div className="h-full flex justify-between">
+        <div className="h-full flex justify-between max-w-[1800px] mx-auto">
           <div className="ml-[27px] h-fit self-center">
             <Image
               src={info[lang].navbar.logo}
@@ -22,7 +22,7 @@ const Navbar = () => {
               height={28}
             />
           </div>
-          <ul className="w-[154px] mr-[39px] h-fit flex justify-between self-center text-base text-black uppercase">
+          <ul className="w-[154px] mr-[39px] h-fit flex justify-between self-center text-base text-black font-sans uppercase">
             <li>
               <a href="#">{info[lang].navbar.menu.contact}</a>
             </li>

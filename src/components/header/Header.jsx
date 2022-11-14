@@ -10,13 +10,13 @@ const Header = () => {
         {info && (
           <>
             <div className="grid grid-cols-12 gap-4">
-              <h1 className="col-start-4 col-span-7 mt-[148px] text-xxl text-black">
+              <h1 className="col-start-4 col-span-7 mt-[148px] text-xxxl text-black">
                 {info[lang].header.h1}
               </h1>
             </div>
             <div className="pb-[192px]">
               <div className="grid grid-cols-12 gap-4">
-                <span className="col-start-4 col-span-2 self-center text-xxl text-black text-center">
+                <span className="col-start-4 col-span-2 self-center text-xxxl text-black text-center">
                   {info[lang].header.discount}
                 </span>
                 <div className="col-span-5">

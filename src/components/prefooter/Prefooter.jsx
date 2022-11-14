@@ -6,7 +6,7 @@ import { BsTwitter } from "react-icons/bs";
 const Prefooter = ({ data }) => {
   return (
     <div className="bg-gray8">
-      <div className="grid grid-cols-12 gap-4 max-w-[1440px] mx-auto pb-[15px]">
+      <div className="grid grid-cols-12 gap-4 max-w-[1800px] mx-auto pb-[15px]">
         <div className="col-start-3 col-span-7 text-white mt-[24px]">
           <p className="h-[16px] leading-[0.875rem] text-[10px]">
             {data.contactCenter.title}
@@ -28,13 +28,13 @@ const Prefooter = ({ data }) => {
           </div>
         </div>
         <div className="flex justify-center gap-2 col-span-1 text-white mt-[24px] text-[10px]">
-          <a className="text-[24px] text-white">
+          <a className="text-[24px] text-white cursor-pointer">
             <FaFacebookF />
           </a>
-          <a className="text-[24px] text-white">
+          <a className="text-[24px] text-white cursor-pointer">
             <BsInstagram />
           </a>
-          <a className="text-[24px] text-white">
+          <a className="text-[24px] text-white cursor-pointer">
             <BsTwitter />
           </a>
         </div>

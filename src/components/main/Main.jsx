@@ -13,7 +13,7 @@ const Main = () => {
     <main className="mt-[147px]">
       {info && (
         <>
-          <section className="grid grid-cols-12 gap-4 max-w-[1440px] mb-[63px] mx-auto">
+          <section className="grid grid-cols-12 gap-4 max-w-[1800px] mb-[63px] mx-auto">
             <div className="col-start-2 col-span-6">
               <Carousel imagesArray={info[lang].carousel.desktop} />
             </div>
@@ -42,7 +42,7 @@ const Main = () => {
           </section>
 
           <section className="bg-gray2">
-            <div className="grid grid-cols-12 gap-4 max-w-[1440px] mx-auto">
+            <div className="grid grid-cols-12 gap-4 max-w-[1800px] mx-auto">
               <Legals data={info[lang].legals} />
             </div>
           </section>

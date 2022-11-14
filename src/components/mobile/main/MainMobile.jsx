@@ -24,25 +24,28 @@ const MainMobile = () => {
                 width={65}
                 height={96}
               />
-              <div className="text-center w-[332px] mx-auto">
-                <h2 className="mt-[20px] text-[20px] text-gray9 uppercase h-[43px]">
+              <div className="text-center w-[90%] mx-auto">
+                <h2 className="mt-[20px] text-[20px] text-gray9 uppercase h-[42px] leading-[42px]">
                   {info[lang].promotions[0].title}
                 </h2>
               </div>
-              <div className="w-[332px] mx-auto">
-                <h3 className="mt-[20px] text-[20px] text-gray9">
+              <div className="w-[88%] mx-auto">
+                <h3 className="mt-[9px] text-[20px] text-gray9">
                   {info[lang].promotions[0].Subtitle}
                 </h3>
               </div>
 
               {info[lang].promotions[0].paragraphs.map((paragraph, index) => (
-                <div key={index} className="w-[90%] mx-auto">
-                  <p className="mt-[19px] text-[16px] text-gray7 leading-5">
+                <div
+                  key={index}
+                  className="mt-[19px] pb-[20px] w-[90%] mx-auto"
+                >
+                  <p className="text-[16px] text-gray7 leading-5">
                     {paragraph}
                   </p>
                 </div>
               ))}
-              <div className="w-max mt-[19px] mx-auto  text-[16px] ">
+              <div className="w-[90%] h-[42px] mt-[7px] mb-[30px] mx-auto  text-[16px] ">
                 <Button
                   text={info[lang].promotions[0].button.text}
                   tsize="20px"
@@ -52,7 +55,7 @@ const MainMobile = () => {
           </section>
 
           <section className="bg-gray2">
-            <div className="grid grid-cols-12 gap-4 max-w-[1440px] mx-auto">
+            <div className="w-[90%] max-w-[1800px] mx-auto pt-[33px] pb-[17px]">
               <Legals data={info[lang].legals} />
             </div>
           </section>
