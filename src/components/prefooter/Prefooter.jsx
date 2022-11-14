@@ -1,8 +1,9 @@
 import React from "react";
-import SocialIcon from "../socialIcon/SocialIcon";
+import { FaFacebookF } from "react-icons/fa";
+import { BsInstagram } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
 
 const Prefooter = ({ data }) => {
-  
   return (
     <div className="bg-gray8">
       <div className="grid grid-cols-12 gap-4 max-w-[1440px] mx-auto pb-[15px]">
@@ -26,10 +27,16 @@ const Prefooter = ({ data }) => {
               ))}
           </div>
         </div>
-        <div className="col-span-1 text-white mt-[24px] text-[10px]">
-          <SocialIcon></SocialIcon>
-          <SocialIcon></SocialIcon>
-          <SocialIcon></SocialIcon>
+        <div className="flex justify-center gap-2 col-span-1 text-white mt-[24px] text-[10px]">
+          <a className="text-[24px] text-white">
+            <FaFacebookF />
+          </a>
+          <a className="text-[24px] text-white">
+            <BsInstagram />
+          </a>
+          <a className="text-[24px] text-white">
+            <BsTwitter />
+          </a>
         </div>
       </div>
     </div>
