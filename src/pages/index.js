@@ -7,14 +7,13 @@ import { useEffect } from "react";
 import axios from "axios";
 import Main from "../components/main/Main";
 import Footer from "../components/footer/Footer";
+import NavbarMobile from "../components/mobile/navbar/NavbarMobile";
+import HeaderMobile from "../components/mobile/header/HeaderMobile";
+import MainMobile from "../components/mobile/main/MainMobile";
 import {
   BrowserView,
   MobileView,
-  isBrowser,
-  isMobile,
 } from "react-device-detect";
-import NavbarMobile from "../components/mobile/navbar/NavbarMobile";
-import HeaderMobile from "../components/mobile/header/HeaderMobile";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -52,7 +51,7 @@ export default function Home() {
         <div>
           <NavbarMobile />
           <HeaderMobile />
-          {/* <Main /> */}
+          <MainMobile />
           <Footer />
         </div>
       </MobileView>

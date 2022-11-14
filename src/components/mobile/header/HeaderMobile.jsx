@@ -18,7 +18,7 @@ const HeaderMobile = () => {
                 {info.es.header.discount}
               </h3>
             </div>
-            <div className="mt-[37px] mb-[37px] m-auto w-[85%]">
+            <div className="mt-[37px] pb-[61px] m-auto w-[85%]">
               {info.es.header.paragraphs.map((paragraph, index) => (
                 <div className="inline" key={index}>
                   <p className="text-[20px] text-gray7 inline leading-9">

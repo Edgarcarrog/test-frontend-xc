@@ -12,12 +12,16 @@ export const infoSlice = createSlice({
     setInfo: (state, action) => {
       state.info = action.payload;
     },
-    setLanguage: (state, action) => {
-      state.language = action.payload;
+    changeLanguage: (state, action) => {
+      if (action.payload === "es") {
+        state.language = "en";
+      } else if (action.payload === "en") {
+        state.language = "es";
+      }
     },
   },
 });
 
-export const { setInfo, setLanguage } = infoSlice.actions;
+export const { setInfo, changeLanguage } = infoSlice.actions;
 
 export default infoSlice.reducer;
