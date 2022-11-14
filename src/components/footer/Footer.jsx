@@ -4,8 +4,9 @@ import { useSelector } from "react-redux";
 
 const Footer = () => {
   const info = useSelector((state) => state.info.info);
+  const lang = useSelector((state) => state.info.language);
 
-  return <footer>{info && <Prefooter data={info.es.prefooter} />}</footer>;
+  return <footer>{info && <Prefooter data={info[lang].prefooter} />}</footer>;
 };
 
 export default Footer;

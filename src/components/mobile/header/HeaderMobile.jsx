@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 
 const HeaderMobile = () => {
   const info = useSelector((state) => state.info.info);
+  const lang = useSelector((state) => state.info.language);
 
   return (
     <>
@@ -10,16 +11,16 @@ const HeaderMobile = () => {
           <>
             <div className="grid">
               <h1 className="mt-[73px] text-xxl text-black text-center">
-                {info.es.header.h1}
+                {info[lang].header.h1}
               </h1>
             </div>
             <div className="mt-[40px]">
               <h3 className="text-xxl text-black text-center">
-                {info.es.header.discount}
+                {info[lang].header.discount}
               </h3>
             </div>
             <div className="mt-[37px] pb-[61px] m-auto w-[85%]">
-              {info.es.header.paragraphs.map((paragraph, index) => (
+              {info[lang].header.paragraphs.map((paragraph, index) => (
                 <div className="inline" key={index}>
                   <p className="text-[20px] text-gray7 inline leading-9">
                     {paragraph}
