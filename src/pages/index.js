@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Header from "../components/Header/Header";
+import Header from "../components/header/Header";
 import Navbar from "../components/navbar/Navbar";
 import { useDispatch } from "react-redux";
 import { setInfo } from "../store/features/infoSlice";
